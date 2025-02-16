@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+  <title>Superfast Systems</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #6667AB;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #939597;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #333;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .content img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .description {
+      flex: 1;
+    }
+    .description p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #000;
+      text-align: center;
+    }
+    .contact-button {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .contact-button button {
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-button button:hover {
+      background-color: #0056b3;
+    }
+    .notification {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Superfast Systems</h1>
+    </header>
+
+    <div class="content">
+        <div class="description">
+          <p>
+            At Superfast Systems, I specialise in building custom computers tailored to your needs and wants. Whether you're a gamer, a content creator, an artificial intelligence enthusiast or just need a reliable workstation, I can assure that my systems are optimised in its price to performance ratio. Let me help you choose and put together the most optimal hardware to bring your dream desktop to life!
+          </p>
+        </div>
+      </div>
+
+    <div class="content">
+        <div class="description">
+          <p>
+            My Completed Builds
+          </p>
+        </div>
+      </div>
+
+    <div class="content">
+      <img src="C:\Superfast Systems\CH160.jpg" alt="Custom Built Computer">
+      <div class="description">
+        <p>
+            Mini-ITX Compact Gaming PC<br>
+            CPU: AMD Ryzen 5 5600<br>
+            GPU: AMD Radeon RX 6600 XT
+        </p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="content">
+        <div class="description">
+          <p>
+            Mid-Form Factor Minimalistic Gaming/Workstation PC<br>
+            CPU: AMD Ryzen 5 5600<br>
+            GPU: Nvidia GeForce RTX 2080 Ti
+          </p>
+        </div>
+        <img src="C:\Superfast Systems\AP201.jpg" alt="Custom Built Computer">
+      </div>
+
+    <br>
+
+    <div class="content">
+        <img src="C:\Superfast Systems\D32 STD Red.png" alt="Custom Built Computer">
+        <div class="description">
+          <p>
+            Mini ITX Aesthetic Gaming PC<br>
+            CPU: AMD Ryzen 5 7600<br>
+            GPU: AMD Radeon RX 6600
+          </p>
+        </div>
+      </div>
+      <div class="contact-button">
+        <button onclick="copyEmail()">Contact Me</button>
+      </div>
+
+  </div>
+
+  <div id="notification" class="notification">Email copied to clipboard, open up Gmail or Outlook and contact me!</div>
+
+  <script>
+    function copyEmail() {
+      const email = "xxx@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+        const notification = document.getElementById("notification");
+        notification.style.display = "block";
+        setTimeout(() => {
+          notification.style.display = "none";
+        }, 3000);
+      });
+    }
+  </script>
+</body>
+</html>
